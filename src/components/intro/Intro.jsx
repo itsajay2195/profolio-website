@@ -1,9 +1,9 @@
 import './intro.scss'
 
-function intro() {
+function Intro() {
   return (
     <div className='intro'>intro</div>
   )
 }
 
-export default intro
+export default Intro
