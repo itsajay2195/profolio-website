@@ -1,11 +1,12 @@
 import "./menu.scss"
 
+//:Todo: add the on click for the list items
 
 function menu({menuOpen,setMenuOpen}) {
   return (
     <div className={`menu ${menuOpen && 'active'}`}>
         <ul>
-            <li>
+            <li >
                 <a href="#intro">Home</a>
             </li>
 
