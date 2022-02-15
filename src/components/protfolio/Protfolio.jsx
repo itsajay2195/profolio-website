@@ -3,7 +3,7 @@ import './protfolio.scss'
 function Protfolio() {
   return (
     <div className='protfolio' id="protfolio">
-      <ul>
+      <ul className='topBar'>
         <li className='active'>Featured</li>
         <li>Mobile App</li>
         <li>Web App</li>
@@ -27,6 +27,13 @@ function Protfolio() {
           <img src="assets/happyfox.jpg" alt="profile" />
           <h3> Happfox Helpdesk app 2.0</h3>
         </div>
+
+
+        <div className='protfolio-item'>
+          <img src="assets/happyfox.jpg" alt="profile" />
+          <h3> Happfox Helpdesk app 2.0</h3>
+        </div>
+
 
         <div className='protfolio-item'>
           <img src="assets/happyfox.jpg" alt="profile" />
