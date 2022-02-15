@@ -1,13 +1,14 @@
 import './protfolio.scss'
+import ProtfolioList from '../protfolioList/ProtList'
+import {useState} from 'react'
 
 function Protfolio() {
+  const list=[{id:'featured', title:'Featured'},{id:'mobile-apps',title:'Mobile-Apps'},{id:'web-apps',title:'Web-Apps'}]
+  const [selected,setSelected] = useState('featured')
   return (
     <div className='protfolio' id="protfolio">
-      <ul className='topBar'>
-        <li className='active'>Featured</li>
-        <li>Mobile App</li>
-        <li>Web App</li>
-        <li>Featured</li>
+      <ul>
+        {list.map(item=>(<ProtfolioList item={item} active={selected === item.id} setSelected ={setSelected}></ProtfolioList>))}
       </ul>
 
      <div className='container'>
