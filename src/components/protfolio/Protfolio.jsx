@@ -1,14 +1,20 @@
 import './protfolio.scss'
 import ProtfolioList from '../protfolioList/ProtList'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import {mobileProtfolio} from '../../data'
 
 function Protfolio() {
   const list=[{id:'featured', title:'Featured'},{id:'mobile-apps',title:'Mobile-Apps'},{id:'web-apps',title:'Web-Apps'}]
+  const [data,setData] = useState(list)
   const [selected,setSelected] = useState('featured')
+  
+  useEffect(()=>{
+    
+  },[selected])
   return (
     <div className='protfolio' id="protfolio">
       <ul>
-        {list.map(item=>(<ProtfolioList item={item} active={selected === item.id} setSelected ={setSelected}></ProtfolioList>))}
+        {data.map(item=>(<ProtfolioList item={item} active={selected === item.id} setSelected ={setSelected}></ProtfolioList>))}
       </ul>
 
      <div className='container'>
