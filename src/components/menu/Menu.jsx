@@ -18,9 +18,9 @@ function menu({menuOpen,setMenuOpen}) {
                 <a href="#works">Works</a>
             </li>
 
-            <li>
+            {/* <li>
                 <a href="#testimonial">Testimonials</a>
-            </li>
+            </li> */}
 
             <li>
                 <a href="#contact">Contact</a>

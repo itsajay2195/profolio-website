@@ -28,7 +28,7 @@ function Works() {
               </div>
             </div>
             <div className="right">
-              <img src="assets/hf-gif.gif" alt="" />
+              <img src={item.gif} alt="" />
             </div>
           </div>
         </div>)}

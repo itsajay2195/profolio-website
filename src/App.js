@@ -18,7 +18,7 @@ function App() {
         <Intro></Intro>
         <Protfolio></Protfolio>
         <Works></Works>
-        <Testimonial></Testimonial> 
+        {/* <Testimonial></Testimonial>  */}
         <Contact></Contact>
       </div>
 

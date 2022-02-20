@@ -63,7 +63,7 @@ export const sliderData =[
     src:"assets/feed/feed1.png",
     type_img:"assets/mobile.png",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. ",
-    gif:"assets/hf-gif.gif",
+    gif:"assets/feed-gif.gif",
     },  
 
 ]
