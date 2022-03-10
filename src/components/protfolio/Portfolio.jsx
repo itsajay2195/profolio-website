@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { mobileProtfolio, featuredProtfolio, webAppProtfolio } from '../../data'
 
 
-function Protfolio() {
+function Portfolio() {
   const list = [{ id: 'featured', title: 'Featured' }, { id: 'mobile-apps', title: 'Mobile-Apps' }, { id: 'web-apps', title: 'Web-Apps' }]
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
@@ -39,7 +39,7 @@ function Protfolio() {
     }
   }, [selected])
   return (
-    <div className='protfolio' id="protfolio">
+    <div className='portfolio' id="portfolio">
       <ul>
         {list.map(item => (<ProtfolioList item={item} active={selected === item.id} setSelected={setSelected}></ProtfolioList>))}
       </ul>
@@ -63,4 +63,4 @@ function Protfolio() {
   )
 }
 
-export default Protfolio
+export default Portfolio

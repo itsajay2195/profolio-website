@@ -11,7 +11,7 @@ function menu({menuOpen,setMenuOpen}) {
             </li>
 
             <li>
-                <a href="#portfolio">Protfolio</a>
+                <a href="#portfolio">Portfolio</a>
             </li>
 
             <li>
